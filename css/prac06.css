@@ -1,0 +1,87 @@
+/*@charset "utf-8";*/
+/*body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select{margin: 0; padding: 0;}*/
+
+/*html > body{font-size: small;}*/
+/*html > body.font_size_x_small{font-size: x-small;}*/
+/*html > body.font_size_small{font-size: small;}*/
+/*html > body.font_size_medium{font-size: medium;}*/
+/*html > body.font_size_large{font-size: large;}*/
+/*html > body.font_size_x_large{font-size: x-large;}*/
+
+/*!* 나눔고딕 온라인 폰트 *!*/
+/*@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');*/
+/*html > body *{font-family: 'Nanum Gothic';}*/
+
+/*img, fieldset{border: 0;}*/
+/*ul, ol{list-style: none;}*/
+/*em, address{font-style: normal;}*/
+/*a{text-decoration: none;}*/
+/*a:hover, a:active, a:focus{text-decoration: underline;}*/
+
+
+.display_none{
+    display: none;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* '>' : 자식 중에 찾음 */
+/* ' ' : 자손 전체 중에 찾음 */
+/* ''  : 붙어 있으면 같은 클래스 안에 쓰인 것*/
+
+nav > ul {
+    /*왼쪽 정렬*/
+    display: flex;
+}
+
+nav > ul > li > a{
+    /*좌우10, 상하20*/
+    padding: 10px 20px;
+    border: 5px solid #000;
+    margin: 10px;
+    cursor: pointer;
+}
+nav > ul > li > a:before{
+    /* 이모지 아이콘 */
+    content: '❤';
+    /* 이미지 아이콘*/
+    /*content: '';*/
+    /*background-image: url('../제목 없음.png');*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*display: inline-block;*/
+}
+
+nav ul li {
+    /* 하위 메뉴리스트에서 absolute로 포지션을 잡을 수 있게 relative로 지정해줌 */
+    position: relative;
+}
+.twoStepMenu{
+    /* absolute : 부모기준 */
+    /* relative : 자신기준 */
+    /* static : 포지션없음 */
+    position: absolute;
+    width: 400px;
+    left: 10px;
+    top: 36px;
+    background: darkgoldenrod;
+}
+
+nav  ul  li  a:hover {
+    background: #009688;
+    color: #fff;
+}
+
+/*!* + : 형제를 말함*!*/
+/*.btn_a:hover+.sub_menu{*/
+/*    display: block;*/
+/*}*/

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prac01</title>
+    <link rel="stylesheet" href="../css/prac01.css">
+</head>
+<body>
+
+<h3>Input CheckBox or Radio Box</h3>
+<label>
+    <input type="checkbox" name="alphabet" id="ALL" value="ALL" > ALL
+</label>
+<label>
+    <input type="checkbox" name="alphabet" id="A" value="A" > A
+</label>
+<label>
+    <input type="checkbox" name="alphabet" id="B" value="B"> B
+</label>
+<button class="btnALL"> 전체 </button>
+<button class="btnA"> A 선택 </button>
+<button class="btnB"> B 선택 </button>
+
+<h3>button 클릭 시 '2'으로 select 변경되도록</h3>
+<select name="SelectList" id="SelectList">
+    <option value="1">1번</option>
+    <option value="2">2번</option>
+    <option value="3">3번</option>
+</select>
+<button class="btnSelect"> 이거 눌렀을 때 2번 선택되도록 </button>
+
+<h3>select 변경 시 아래 컨텐츠 보여주기</h3>
+<select name="SelectList2" id="SelectList2">
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+<input type="text" name="SelectList2Text" id="SelectList2Text" value="">
+
+<h3>check box all click control</h3>
+<label>
+    <input type="checkbox" name="numAll" id="numAll" value="numAll" > ALL
+</label>
+<label>
+    <input type="checkbox" name="num" id="num1" value="1" > 1
+</label>
+<label>
+    <input type="checkbox" name="num" id="num2" value="2"> 2
+</label>
+
+<h3>컨텐츠 show & close</h3>
+<p>If you click on the "Hide" button, I will disappear.</p>
+<!--display 속성을 block 으로 바꾼다.-->
+<button id="hide">Hide</button>
+<!--display 속성을 none 으로 바꾼다.-->
+<button id="show">Show</button>
+
+<!--$(selector).show(speed,callback);-->
+<!--$(selector).hide(speed,callback);-->
+<!--selector - 태그 ID 값 또는 선택할 노드들의 셀렉터 구문을 넣어줍니다.-->
+<!--speed(optional) - "slow", "fast", 또는 밀리세컨드의 숫자를 넣어주면 보여주거나 감출 속도를 정할 수 있습니다.-->
+<!--callback(optional) - 콜백 함수를 설정하면 show()/hide() 함수 완료 후 실행됩니다.-->
+
+<h3>loading</h3>
+<div class="loading display_none">로딩 중...</div>
+<button id="loadingStart">로딩시작</button>
+<button id="loadingStop">로딩중지</button>
+
+<h3>포지션 그려보기</h3>
+<div class="fullLoding">로딩화면 전체화면 띄우기</div>
+<button id="btnFullLoding">로딩화면 전체화면 띄우기</button>
+<div class="wrap">
+    ******************
+    <div class="wrapBox">
+        ******************
+        <div>
+            ******************
+        </div>
+        <div class="smallBox">
+            특정지점
+            <div class="smallLoding">특정지점에 넣는 로딩 화면</div>
+        </div>
+    </div>
+</div>
+<button id="btnSmallLoding">로딩 화면 특정지점에 띄우기</button>
+
+<script src="../lib/jquery-3.6.0.js"></script>
+<script src="../js/prac01.js"></script>
+<script src="../js/comm.js"></script>
+<!--./ 현재위치 -->
+<!--../ 상위위치 -->
+
+</body>
+</html>
